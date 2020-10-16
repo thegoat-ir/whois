@@ -5,7 +5,7 @@
       <a href="https://mahdyar.me" alt="mahdyar" target="_blank">Mahdyar</a>
     </p>
     <p id="android">
-      This website is available for android as well and can be downloaded from
+      There is an Android app of this website available as well, and can be downloaded from
       <a href="https://mhdyr.ir/whois-1-1" target="_blank">here</a>.
     </p>
   </footer>

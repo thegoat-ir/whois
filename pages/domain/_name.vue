@@ -68,6 +68,9 @@ export default {
   font-size: 20px;
   font-weight: bold;
 }
+footer {
+  margin-top: 50px !important;
+}
 @media (max-width: 1300px) {
   .info {
     height: 65vh;
