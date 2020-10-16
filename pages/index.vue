@@ -36,6 +36,7 @@ input {
   border-left: none;
   border-right: none;
   color: #767676;
+  outline: none;
 }
 @media (max-width: 512px) {
   input {
