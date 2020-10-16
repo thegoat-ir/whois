@@ -13,10 +13,10 @@ svg {
 @media (max-width: 512px) {
   svg {
     width: 20px !important;
-  height: 20px !important;
-  position: absolute;
-  top:35px;
-  left: 30px;
+    height: 20px !important;
+    position: absolute;
+    top: 35px;
+    left: 30px;
   }
 }
 </style>

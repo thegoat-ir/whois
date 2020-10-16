@@ -69,23 +69,22 @@ export default {
   font-weight: bold;
 }
 @media (max-width: 1300px) {
-  .info{
+  .info {
     height: 65vh;
   }
 }
 @media (max-width: 512px) {
-  .container{
+  .container {
     padding: 50px;
   }
-  .title{
+  .title {
     width: 100%;
     font-size: 40px;
     display: inline-block;
   }
-  .info{
+  .info {
     padding: 0;
     height: 65vh;
   }
-  
 }
 </style>

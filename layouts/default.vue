@@ -25,7 +25,7 @@ html {
 }
 
 .container {
-  padding: 250px;
+  padding: 250px 250px 0;
 }
 .title {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
@@ -38,14 +38,14 @@ html {
 }
 @media (max-width: 1300px) {
   .container {
-    padding: 150px;
+    padding: 150px 150px 0;
   }
 }
 @media (max-width: 512px) {
   .container {
-    padding: 150px 50px;
+    padding: 150px 50px 0;
   }
-  .title{
+  .title {
     font-size: 50px;
     text-align: center;
   }

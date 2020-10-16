@@ -1,8 +1,13 @@
 <template>
   <div class="container">
     <h1 class="title">Lookup...</h1>
-      <input v-model="domainName" type="text" placeholder="E.g. mahdyar.me" required/>
-      <n-link :to="`/domain/${domainName}`"><arrow /></n-link>
+    <input
+      v-model="domainName"
+      type="text"
+      placeholder="E.g. mahdyar.me"
+      required
+    />
+    <n-link :to="`/domain/${domainName}`"><arrow /></n-link>
     <copyright />
   </div>
 </template>
@@ -13,26 +18,26 @@ import Vue from "vue";
 export default {
   data() {
     return {
-      domainName: '',
-    }
-  }
-}
+      domainName: "",
+    };
+  },
+};
 </script>
 <style scoped>
-input{
-    display: block;
-    width: 75%;
-    height: 70px;
-    margin: 75px auto;
-    font-size: 30px;
-    padding: 20px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    color: #767676;
+input {
+  display: block;
+  width: 75%;
+  height: 70px;
+  margin: 75px auto;
+  font-size: 30px;
+  padding: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #767676;
 }
 @media (max-width: 512px) {
-  input{
+  input {
     font-size: 20px;
   }
 }

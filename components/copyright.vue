@@ -13,20 +13,24 @@
 <style scoped>
 footer {
   display: block;
+  width: 100%;
   text-align: center;
-  position: absolute;
   bottom: 50px;
-  left: 0;
-  right: 0;
+  margin-top: 375px;
   color: #59405d;
 }
 a {
   color: inherit;
 }
-#android{
-    margin-top:5px;
-    font-size: 14px;
-    color: #555555;
-    opacity: 0.8;
+#android {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555555;
+  opacity: 0.8;
+}
+@media (max-width: 512px) {
+  footer {
+    margin-top: 285px;
+  }
 }
 </style>
