@@ -6,8 +6,9 @@
       type="text"
       placeholder="E.g. mahdyar.me"
       required
+      v-on:keyup.enter="$router.push(`/domain/${domainName}`);"
     />
-    <n-link :to="`/domain/${domainName}`"><arrow /></n-link>
+    <n-link ref="submitButton" :to="`/domain/${domainName}`"><arrow /></n-link>
     <copyright />
   </div>
 </template>
