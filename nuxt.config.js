@@ -45,4 +45,7 @@ export default {
   http: {
     // proxyHeaders: false
   },
+  generate: {
+    fallback: true
+  }
 }
