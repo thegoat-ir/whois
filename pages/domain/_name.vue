@@ -86,5 +86,8 @@ export default {
     padding: 0;
     height: 65vh;
   }
+  footer {
+    margin-top: 80px !important;
+  }
 }
 </style>
