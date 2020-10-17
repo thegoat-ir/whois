@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" v-cloak>
     <h1 class="title">Lookup...</h1>
     <input
       v-model="domainName"
