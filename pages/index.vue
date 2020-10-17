@@ -7,6 +7,7 @@
       placeholder="E.g. mahdyar.me"
       required
       v-on:keyup.enter="$router.push(`/domain/${domainName}`);"
+      autofocus
     />
     <n-link ref="submitButton" :to="`/domain/${domainName}`"><arrow /></n-link>
     <copyright />
