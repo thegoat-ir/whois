@@ -24,14 +24,16 @@
 
 <script>
 export default {
-  watch: {
-    "$route.query": "$fetch",
-  },
   data() {
     return {
       info: {},
     };
   },
+  activated() {
+      if (this.$fetchState.timestamp <= Date.now() - 30000) {
+        this.$fetch()
+      }
+    },
   async fetch() {
     if (this.$route.params.name !== undefined) {
       this.info = await this.$http.$get(
