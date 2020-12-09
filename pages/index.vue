@@ -4,7 +4,7 @@
     <input
       v-model="domainName"
       type="text"
-      placeholder="E.g. mahdyar.me"
+      placeholder="E.g. example.com"
       required
       v-on:keyup.enter="$router.push(`/domain/${domainName}`);"
       autofocus

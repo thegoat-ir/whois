@@ -6,7 +6,7 @@
     </p>
     <p id="android">
       There is an Android app of this website available as well, and can be downloaded from
-      <a href="https://mhdyr.ir/whois-1-1" target="_blank">here</a>.
+      <a href="https://releases.mahdyar.me/whois/android/whois-latest.apk" target="_blank">here</a>.
     </p>
   </footer>
 </template>
