@@ -2,22 +2,29 @@
   <footer>
     <p>
       Made with &lt;3 by
-      <a href="https://mahdyar.me" alt="mahdyar" target="_blank">Mahdyar</a>
+      <a href="https://thegoat.ir" alt="The Goat" target="_blank">The Goat</a>
     </p>
     <p id="android">
-      There is an Android app of this website available as well, and can be downloaded from
-      <a href="https://releases.mahdyar.me/whois/android/whois-latest.apk" target="_blank">here</a>.
+      There is an Android app of this website available as well, and can be
+      downloaded from
+      <a
+        href="https://releases.mahdyar.me/whois/android/whois-latest.apk"
+        target="_blank"
+        >here</a
+      >.
     </p>
   </footer>
 </template>
 <style scoped>
 footer {
+  width: 85%;
+  position: absolute;
   display: block;
-  width: 100%;
   text-align: center;
-  bottom: 50px;
-  margin-top: 375px;
   color: #59405d;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 2rem;
 }
 a {
   color: inherit;
@@ -27,10 +34,11 @@ a {
   font-size: 14px;
   color: #555555;
   opacity: 0.8;
+  display: none;
 }
-@media (max-width: 512px) {
-  footer {
-    margin-top: 285px;
+@media (max-width: 1200px) {
+  #android {
+    display: block;
   }
 }
 </style>

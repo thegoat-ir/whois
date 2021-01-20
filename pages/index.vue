@@ -42,6 +42,7 @@ input {
 @media (max-width: 512px) {
   input {
     font-size: 20px;
+    width: 85%;
   }
 }
 </style>
