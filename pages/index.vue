@@ -6,7 +6,7 @@
       type="text"
       placeholder="E.g. example.com"
       required
-      v-on:keyup.enter="$router.push(`/domain/${domainName}`);"
+      v-on:keyup.enter="$router.push(`/domain/${domainName}`)"
       autofocus
     />
     <n-link ref="submitButton" :to="`/domain/${domainName}`"><arrow /></n-link>
@@ -39,10 +39,18 @@ input {
   color: #767676;
   outline: none;
 }
-@media (max-width: 512px) {
+@media (max-width: 1200px) {
+  .container {
+    margin: 25% auto 0;
+  }
+}
+@media (max-height: 512px) {
   input {
     font-size: 20px;
     width: 85%;
+  }
+  .container {
+    margin: 35% auto 0;
   }
 }
 </style>

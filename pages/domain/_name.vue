@@ -26,14 +26,14 @@
 export default {
   data() {
     return {
-      info: {},
+      info: {}
     };
   },
   activated() {
-      if (this.$fetchState.timestamp <= Date.now() - 30000) {
-        this.$fetch()
-      }
-    },
+    if (this.$fetchState.timestamp <= Date.now() - 30000) {
+      this.$fetch();
+    }
+  },
   async fetch() {
     if (this.$route.params.name !== undefined) {
       this.info = await this.$http.$get(
@@ -43,13 +43,13 @@ export default {
   },
   head() {
     return { title: this.$route.params.name };
-  },
+  }
 };
 </script>
 
 <style scoped>
 .container {
-  padding: 100px;
+  padding: 1.5% 5%;
 }
 .title {
   font-size: 50px;
@@ -58,7 +58,7 @@ export default {
 }
 .info {
   color: #59405d;
-  padding: 10px 120px;
+  padding: 1% 15%;
   height: 70vh;
   overflow-y: auto;
 }
@@ -70,18 +70,16 @@ export default {
   font-size: 20px;
   font-weight: bold;
 }
-footer {
-  margin-top: 50px !important;
-}
-@media (max-width: 1300px) {
+
+@media (max-width: 1200px) {
   .info {
     height: 65vh;
   }
+  .container {
+    margin: 10% auto 0;
+  }
 }
 @media (max-width: 512px) {
-  .container {
-    padding: 50px;
-  }
   .title {
     width: 100%;
     font-size: 40px;
@@ -89,10 +87,10 @@ footer {
   }
   .info {
     padding: 0;
-    height: 65vh;
+    height: 60vh;
   }
-  footer {
-    margin-top: 80px !important;
+  .container {
+    padding: 10% 10%;
   }
 }
 </style>

@@ -37,15 +37,7 @@ html {
   color: #59405d;
   letter-spacing: 1px;
 }
-@media (max-width: 1200px) {
-  .container {
-    margin: 25% auto 0;
-  }
-}
 @media (max-width: 512px) {
-  .container {
-    margin: 35% auto 0;
-  }
   .title {
     font-size: 50px;
     text-align: center;
