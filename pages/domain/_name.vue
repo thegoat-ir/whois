@@ -23,7 +23,6 @@
 </template>
 
 <script>
-import errorVue from "~/layouts/error.vue";
 export default {
   data() {
     return {
