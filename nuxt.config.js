@@ -47,5 +47,8 @@ export default {
   },
   generate: {
     fallback: true
+  },
+  env: {
+    apiToken: process.env.API_TOKEN
   }
 }

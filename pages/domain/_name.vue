@@ -26,7 +26,8 @@
 export default {
   data() {
     return {
-      info: {}
+      info: {},
+      apiToken: process.env.apiToken,
     };
   },
   activated() {
@@ -37,7 +38,7 @@ export default {
   async fetch() {
     if (this.$route.params.name !== undefined) {
       this.info = await this.$http.$get(
-        `https://api.mahdyar.me/whois/lookup?token=401d047add076e4b7e29423e7db623c0&domain=${this.$route.params.name}`
+        `https://api.mahdyar.me/whois/lookup?token=${this.apiToken}&domain=${this.$route.params.name}`
       );
     }
   },
