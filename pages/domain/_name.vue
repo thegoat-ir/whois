@@ -23,6 +23,7 @@
 </template>
 
 <script>
+import errorVue from "~/layouts/error.vue";
 export default {
   data() {
     return {
@@ -44,7 +45,17 @@ export default {
   },
   head() {
     return { title: this.$route.params.name };
-  }
+  },
+  validate({ params, query, store }) {
+    if (params.name == null) return false;
+    else if (
+      /^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}$/.test(
+        params.name
+      )
+    )
+      return true;
+    else throw new Error("You should enter a valid domain name");
+  },
 };
 </script>
 
