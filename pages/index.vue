@@ -39,7 +39,7 @@ input {
 }
 @media (max-width: 1200px) {
   .container {
-    margin: 25% auto 0;
+    margin: 7rem auto 0;
   }
 }
 @media (max-height: 512px) {
@@ -48,7 +48,7 @@ input {
     width: 85%;
   }
   .container {
-    margin: 35% auto 0;
+    margin: 1rem auto 0;
   }
 }
 </style>

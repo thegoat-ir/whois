@@ -25,8 +25,8 @@ html {
 }
 
 .container {
-  margin: 5% auto 0;
-  padding: 15%;
+  margin: 10rem auto 0;
+  padding: 0 15%;
 }
 .title {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
@@ -39,7 +39,7 @@ html {
 }
 @media (max-width: 512px) {
   .title {
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
   }
 }
