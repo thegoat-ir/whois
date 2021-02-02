@@ -60,6 +60,7 @@ export default {
 
 <style scoped>
 .container {
+  margin: 5% auto;
   padding: 1.5% 5%;
 }
 .title {
