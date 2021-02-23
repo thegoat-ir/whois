@@ -71,7 +71,7 @@ export default {
 .info {
   color: #59405d;
   padding: 1% 15%;
-  height: 70vh;
+  height: 65vh;
   overflow-y: auto;
 }
 .info ul {
