@@ -38,7 +38,7 @@ export default {
   async fetch() {
     if (this.$route.params.name !== undefined) {
       this.info = await this.$http.$get(
-        `https://api.mahdyar.me/whois/lookup?token=${this.apiToken}&domain=${this.$route.params.name}`
+        `https://api.thegoat.ir/whois/lookup?token=${this.apiToken}&domain=${this.$route.params.name}`
       );
     }
   },
