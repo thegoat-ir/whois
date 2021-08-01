@@ -15,12 +15,24 @@
 </template>
 
 <script lang="ts">
+const psl = require('psl');
 export default {
   data() {
     return {
       domainName: "",
     };
   },
+  watch: {
+    domainName: function(newDomainName:string) {
+      try {
+        const url = new URL(newDomainName);
+        if (url.hostname) 
+          this.domainName = psl.parse(url.hostname).domain;
+      } catch(e){
+        // do nothing
+      }
+    }
+  }
 };
 </script>
 <style scoped>
