@@ -43,7 +43,21 @@ export default {
     }
   },
   head() {
-    return { title: this.$route.params.name };
+    return {
+      title: this.$route.params.name,
+      meta: [
+        {
+          hid: "og:title",
+          name: "og:title",
+          content: `${this.$route.params.name} whois lookup | thegoat.ir`,
+        },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content: `${this.$route.params.name} whois lookup information.`,
+        },
+      ],
+    };
   },
   validate({ params, query, store }) {
     if (params.name == null) return false;
