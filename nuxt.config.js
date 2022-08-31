@@ -9,23 +9,24 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      { hid: "description", name: "description", content: "" },
+      { hid: "theme-color", name: "theme-color", content: "#59405d" },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [],
 
   pwa: {
-    meta:{
-      mobileAppIOS: true
+    meta: {
+      mobileAppIOS: true,
     },
     manifest: {
       name: "Whois | thegoat.ir",
       lang: "en",
-      useWebmanifestExtension: false
-    }
+      useWebmanifestExtension: false,
+    },
   },
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -38,7 +39,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     "@nuxt/typescript-build",
-    "@nuxtjs/pwa"
+    "@nuxtjs/pwa",
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -49,9 +50,9 @@ export default {
     // proxyHeaders: false
   },
   generate: {
-    fallback: true
+    fallback: true,
   },
   env: {
-    apiToken: process.env.API_TOKEN
-  }
+    apiToken: process.env.API_TOKEN,
+  },
 };
